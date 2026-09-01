@@ -2,7 +2,11 @@
 
 ## Algorithm
 
-Traverse the array and calculate the complement needed to reach the target. If the complement was already seen, return its index and the current index. Otherwise, store the current value and its index.
+1. Create a `Map` to store previously seen values and their indices.
+2. Traverse the array and calculate the complement needed to reach the target.
+3. If the complement is already in the `Map`, return its index and the current index.
+4. Otherwise, store the current value and its index.
+5. If no pair is found, return an empty array.
 
 ## Data Structure
 
