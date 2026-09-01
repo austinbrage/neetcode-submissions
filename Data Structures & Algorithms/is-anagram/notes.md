@@ -2,7 +2,12 @@
 
 ## Algorithm
 
-Traverse `s` to count the frequency of each character. Then traverse `t` and decrement the corresponding count. If a character doesn't exist or its count becomes negative, return `false`.
+1. If `s` and `t` have different lengths, return `false`.
+2. Create a `Map` to store the frequency of each character in `s`.
+3. Traverse `s` and increment the count for each character.
+4. Traverse `t` and decrement the count for each character.
+5. If a character doesn't exist in the `Map`, or its count becomes negative, return `false`.
+6. If the loop finishes without finding a mismatch, return `true`.
 
 ## Data Structure
 
